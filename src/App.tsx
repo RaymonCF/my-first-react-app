@@ -1,5 +1,6 @@
 import LightSwitch from './components/lightswitch';
 import Title from './components/Title';
+import User from './components/User';
 
 import React from 'react';
 import './App.css';
@@ -12,6 +13,11 @@ const App: React.FC = () => {
         <Title content="Hello, Motherfucking Henkies!" />
         <LightSwitch />
         <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          <User name="Henk" />
+          <User name="Ook Henk" />
+          <User name="Nog Meer Henk" />
+        </p>
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
