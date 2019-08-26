@@ -1,9 +1,13 @@
 // src/components/Title.tsx
 import * as React from 'react';
 
-class Title extends React.Component {
+export interface ITitleProps {
+  content: string;
+}
+
+class Title extends React.Component<ITitleProps> {
   public render() {
-    return <h1>Henk is your boss</h1>;
+    return <h1>{this.props.content}</h1>;
   }
 }
 
