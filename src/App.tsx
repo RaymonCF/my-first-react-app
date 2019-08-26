@@ -1,3 +1,4 @@
+import LightSwitch from './components/lightswitch';
 import Title from './components/Title';
 
 import React from 'react';
@@ -9,6 +10,7 @@ const App: React.FC = () => {
     <div className="App">
       <header className="App-header">
         <Title content="Hello, Motherfucking Henkies!" />
+        <LightSwitch />
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
