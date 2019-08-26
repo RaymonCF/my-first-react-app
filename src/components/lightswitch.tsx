@@ -13,7 +13,14 @@ export default class LightSwitch extends React.Component<{}, ILightSwitchState> 
         <p>
           The light switch is <strong>{this.state.active ? 'on' : 'off'}</strong>
         </p>
+        <button onClick={this.toggle}>Toggle</button>
       </div>
     );
   }
+
+  private toggle = () => {
+    this.setState({
+      active: !this.state.active,
+    });
+  };
 }
