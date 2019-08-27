@@ -45,9 +45,12 @@ export default class Clock extends React.Component<{}, IClockState> {
   public render() {
     return (
       <div id="clock-block">
-        <span className="hours" style={this.styles.blue} />:
-        <span className="minutes" style={this.styles.orange} />:
+        <span className="hours" style={this.styles.blue} />
+        {this.state.h}:
+        <span className="minutes" style={this.styles.orange} />
+        {this.state.m}:
         <span className="seconds" style={this.styles.red} />
+        {this.state.s}
       </div>
     );
   }
