@@ -1,6 +1,6 @@
+import Clock from './components/Clock';
 import LightSwitch from './components/lightswitch';
 import Title from './components/Title';
-import User from './components/User';
 import UserBoard from './components/UserBoard';
 
 import React from 'react';
@@ -13,7 +13,7 @@ const App: React.FC = () => {
       <header className="App-header">
         <Title content="Hello, Motherfucking Henkies!" />
         <LightSwitch />
-        <img src={logo} className="App-logo" alt="logo" />
+        <Clock />
         <p>
           <UserBoard />
         </p>
