@@ -6,7 +6,7 @@ export default class UserBoard extends React.Component {
   public render() {
     return (
       <div>
-        <h1>"User Board"</h1>
+        <h1>User Board</h1>
         <div>
           <User name="Henk" />
         </div>
