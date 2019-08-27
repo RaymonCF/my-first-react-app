@@ -14,13 +14,13 @@ export default class Clock extends React.Component<{}, IClockState> {
   };
   public styles = {
     blue: {
-      color: 'blue',
+      color: '#0E2F44',
     },
     orange: {
-      color: 'orange',
+      color: '#FF4500',
     },
     red: {
-      color: 'red',
+      color: '#A3040A',
     },
   };
 
