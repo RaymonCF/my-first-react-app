@@ -1,16 +1,12 @@
 import * as React from 'react';
 
-export interface IClockProps {
-  color: string;
-}
-
-export interface IClockState {
+interface IClockState {
   h: string;
   m: string;
   s: string;
 }
 
-export default class Clock extends React.Component<IClockProps, IClockState> {
+export default class Clock extends React.Component<{}, IClockState> {
   public state = {
     h: '00',
     m: '00',
